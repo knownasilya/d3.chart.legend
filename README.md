@@ -3,6 +3,7 @@ d3.chart.legend
 
 Legend "chart" for mixin with other charts. 
 
+[![Dependencies](https://david-dm.org/knownasilya/d3.chart.pie.png)](https://david-dm.org/knownasilya/d3.chart.pie)  
 [![Gitter chat](https://badges.gitter.im/knownasilya/d3.chart.legend.png)](https://gitter.im/knownasilya/d3.chart.legend)
 
 ## Usage
