@@ -5,6 +5,7 @@
     { label: 'three', value: 1.5 },
     { label: 'other', value: 1 }
   ],
+  data2 = ['one', 'two', 'five'],
   legend;
 
   legend = d3.select('#legend')

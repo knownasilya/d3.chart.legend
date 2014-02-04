@@ -8,6 +8,22 @@ Legend "chart" for mixin with other charts.
 
 ## Usage
 
+This chart requires the following data format:
+
+```js
+[{
+  label: string
+}, {
+  // ..
+}]
+
+// Or just an array of strings
+
+[string, string, ..]
+```
+
+Use it like this:
+
 ```js
   // Appends the chart to an 'svg' element.
   var legend = d3.select('body')
@@ -17,18 +33,7 @@ Legend "chart" for mixin with other charts.
     .chart('Legend');
 
   // Draws legend once you add data.
-  legend.draw([
-    {
-      label: 'my label',
-      value: 3
-    }, {
-      label: 'your label',
-      value: 0.5
-    }, {
-      label: 'other label',
-      value: 1
-    }
-  ]);
+  legend.draw(['label one', 'another label', 'other label']);
 ```
 
 ### Available Options
