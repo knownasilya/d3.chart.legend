@@ -52,6 +52,11 @@ gulp.task('watch', function () {
     gulp.watch('./lib/*.js', function () {
       gulp.run('copy');
     });
+
+    gulp.watch(['./examples/*.js', './examples/index.html'], function () {
+      gulp.src(['./examples/*.js', './examples/index.html'])
+        .pipe(refresh(lrServer));
+    });
   });
 });
 
@@ -67,10 +72,5 @@ gulp.task('openUrl', function(){
     .pipe(open('', { url: 'http://localhost:5000' }));
 });
 
-gulp.task('dev', function () {
-  gulp.start('less', 'copy', 'serve', 'openUrl', 'watch');
-});
-
-gulp.task('default', function () {
-  gulp.start('less', 'copy');
-});
+gulp.task('dev', ['less', 'copy', 'serve', 'openUrl', 'watch']);
+gulp.task('default', ['less', 'copy']);
