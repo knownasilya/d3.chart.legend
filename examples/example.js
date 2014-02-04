@@ -11,7 +11,11 @@
     .append('svg')
       .attr('width', 450)
       .attr('height', 300)
-      .chart('Legend');
+      .chart('Legend', {
+        x: 20,
+        y: 20,
+//        title: 'Example'
+      });
 
   legend.draw(data);
 }());
