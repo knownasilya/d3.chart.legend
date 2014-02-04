@@ -31,6 +31,14 @@ Legend "chart" for mixin with other charts.
   ]);
 ```
 
+### Available Options
+
+* `x` - `int|float` (optional) defaults to `0`
+* `y` - `int|float` (optional) defaults to `0`
+* `markerRadius` - `int` (optional) defaults to `5`. This is the radius of the legend 'icons'.
+* `colors` - `array` (optional) valid d3 colors, defaults to `d3.scale.category20()`
+* `title` - `string` (optional) The title of the legend.
+
 ## Contributing
 
 See the following links:
