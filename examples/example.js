@@ -19,4 +19,8 @@
       });
 
   legend.draw(data);
+
+  setTimeout(function () {
+    legend.draw(data2);
+  }, 3000);
 }());
