@@ -1,6 +1,6 @@
 {
   "name": "d3.chart.legend",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Legend \"chart\" for mixin with other charts.",
   "author": "Ilya Radchenko",
   "license": "MIT",
