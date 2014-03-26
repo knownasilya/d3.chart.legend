@@ -18,22 +18,21 @@ This chart requires the following data format:
 }]
 
 // Or just an array of strings
-
 [string, string, ..]
 ```
 
 Use it like this:
 
 ```js
-  // Appends the chart to an 'svg' element.
-  var legend = d3.select('body')
-    .append('svg')
-    .height(350)
-    .width(400)
-    .chart('Legend');
+// Appends the chart to an 'svg' element.
+var legend = d3.select('body')
+  .append('svg')
+  .height(350)
+  .width(400)
+  .chart('Legend');
 
-  // Draws legend once you add data.
-  legend.draw(['label one', 'another label', 'other label']);
+// Draws legend once you add data.
+legend.draw(['label one', 'another label', 'other label']);
 ```
 
 ### Available Options
